@@ -208,7 +208,7 @@ function renderCards(list) {
       </div>
     `;
 
-    // Add event listeners--
+    // Add event listeners---
     card
       .querySelector(".plant-name")
       .addEventListener("click", () => openModalForPlant(id));
