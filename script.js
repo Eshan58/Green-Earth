@@ -154,7 +154,7 @@ function highlightActive() {
   });
 }
 
-// Render cards in 3-column layout-
+// Render cards in 3-column layout--
 function renderCards(list) {
   if (!Array.isArray(list) || list.length === 0) {
     cardsGrid.innerHTML = `
@@ -208,7 +208,7 @@ function renderCards(list) {
       </div>
     `;
 
-    // Add event listeners
+    // Add event listeners--
     card
       .querySelector(".plant-name")
       .addEventListener("click", () => openModalForPlant(id));
