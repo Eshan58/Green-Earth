@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Green Earth - Plant Trees, Grow Hope</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="container">
+        <div class="brand">
+          <!-- <img
+            src="https://img.icons8.com/emoji/48/000000/deciduous-tree-emoji.png"
+            alt="logo"
+            class="logo"
+          /> -->
+          <span class="site-name"> Green Earth</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#impact" class="nav-link">Our Impact</a>
+          <a href="#plant" class="nav-link">Plant a Tree</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="plantNowBtn" class="btn primary">Plant a Tree</button>
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- BANNER -->
+
+    <section id="home" class="banner">
+      <div class="banner-overlay"></div>
+      <div class="container">
+        <div class="banner-content">
+          <h1 class="banner-title">Plant a Tree, Grow a Future</h1>
+          <p class="banner-subtitle">
+            Join our mission to plant 1 million trees and make the Earth greener
+            for future generations.
+          </p>
+          <button id="bannerPlantBtn" class="btn cta">Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT: CATEGORIES + PRODUCTS -->
+    <!-- <h1 class="4xl text-center">Choose Your Trees</h1> -->
+    <!-- <aside class="sidebar"> -->
+    <div class="sidebar-header text-center">
+      <h3>Choose Your Trees</h3>
+      <p>Select a category to explore</p>
+    </div>
+    <!-- </aside> -->
+    <main class="main-content">
+      <div class="container">
+        <div class="main-grid">
+          <aside class="sidebar">
+            <div class="sidebar-header">
+              <h3>Choose Your Trees</h3>
+              <p>Select a category to explore</p>
+            </div>
+            <div id="categoriesList" class="categories">
+              <!-- buttons inserted dynamically -->
+            </div>
+          </aside>
+
+          <section class="content">
+            <div class="toolbar">
+              <h3 id="categoryTitle">All Trees</h3>
+              <div class="spinner" id="spinner" aria-hidden="true"></div>
+            </div>
+
+            <div id="cardsGrid" class="cards-grid">
+              <!-- cards go here -->
+            </div>
+          </section>
+
+          <aside class="cart">
+            <div class="cart-header">
+              <h3>Your Cart</h3>
+              <span id="cartCount" class="cart-count">0</span>
+            </div>
+            <div class="cart-body">
+              <ul id="cartList" class="cart-list"></ul>
+              <div class="cart-footer">
+                <div class="cart-total">
+                  <span>Total:</span>
+                  <strong id="cartTotal">0.00</strong> USD
+                </div>
+                <button id="checkoutBtn" class="btn checkout-btn">
+                  Checkout
+                </button>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Our Campaign</h2>
+          <p class="section-subtitle">
+            Join us in our mission to restore ecosystems and combat climate
+            change
+          </p>
+        </div>
+        <div class="about-grid">
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=5e0f8aef6f6f2a9e7b7b2c2f5d6f9a2a"
+              alt="campaign"
+            />
+          </div>
+          <div class="about-content">
+            <p class="about-text">
+              We aim to plant thousands of trees to restore urban and rural
+              ecosystems. Each tree helps clean air, hold soil, and support
+              wildlife.
+            </p>
+            <ul class="about-features">
+              <li class="feature-item">
+                <span class="feature-icon">🌱</span>
+                <div>
+                  <h4>Community driven planting</h4>
+                  <p>Local communities lead our planting initiatives</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">🎁</span>
+                <div>
+                  <h4>Free saplings to volunteers</h4>
+                  <p>We provide all materials needed for planting</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">📊</span>
+                <div>
+                  <h4>Long-term maintenance & monitoring</h4>
+                  <p>We ensure trees thrive for years to come</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR IMPACT -->
+    <section id="impact" class="impact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Impact</h2>
+          <p class="section-subtitle">
+            Together we're making a difference for our planet
+          </p>
+        </div>
+        <div class="impact-cards">
+          <div class="impact-card">
+            <div class="impact-icon"></div>
+            <h3 id="statTrees">12,345</h3>
+            <p>Trees planted</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-icon"></div>
+            <h3>3,400</h3>
+            <p>Volunteers</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-icon"></div>
+            <h3>150</h3>
+            <p>Communities reached</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-icon"></div>
+            <h3>50+</h3>
+            <p>Countries involved</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANT A TREE FORM -->
+    <section id="plant" class="plant">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Plant a Tree Today</h2>
+          <p class="section-subtitle">
+            Join our mission by planting a tree today
+          </p>
+        </div>
+        <div class="plant-content">
+          <div class="plant-info">
+            <h3>Why Plant Trees?</h3>
+            <ul>
+              <li>🌬️ Improve air quality by filtering pollutants</li>
+              <li>🌡️ Combat climate change by absorbing CO2</li>
+              <li>💧 Prevent soil erosion and water runoff</li>
+              <li>🦜 Provide habitat for wildlife</li>
+              <li>🌳 Create green spaces for communities</li>
+            </ul>
+          </div>
+          <form id="plantForm" class="plant-form">
+            <div class="form-row">
+              <label for="donorName">Name</label>
+              <input
+                required
+                id="donorName"
+                type="text"
+                placeholder="Your name"
+              />
+            </div>
+            <div class="form-row">
+              <label for="donorEmail">Email</label>
+              <input
+                required
+                id="donorEmail"
+                type="email"
+                placeholder="you@example.com"
+              />
+            </div>
+            <div class="form-row">
+              <label for="donorCount">Number of Trees</label>
+              <input required id="donorCount" type="number" min="1" value="1" />
+            </div>
+            <div class="form-row">
+              <label for="donorMessage">Message (Optional)</label>
+              <textarea
+                id="donorMessage"
+                placeholder="Share your motivation for planting trees..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn primary">Donate & Plant</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="brand">
+              <span class="site-name"> Green Earth</span>
+            </div>
+            <p>Planting trees for a greener tomorrow</p>
+            <div class="social-links"></div>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#impact">Our Impact</a></li>
+                <li><a href="#plant">Plant a Tree</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="#">Tree Care Guide</a></li>
+                <li><a href="#">Volunteer Opportunities</a></li>
+                <li><a href="#">Educational Materials</a></li>
+                <li><a href="#">Partnerships</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Contact</h4>
+              <ul>
+                <li>Sylhet, Bangladesh</li>
+                <li>+088 016 **** ****</li>
+                <li>mahdi******@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="year"></span> Green Earth. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+      <div class="modal-content">
+        <button id="modalClose" class="modal-close">✖</button>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
